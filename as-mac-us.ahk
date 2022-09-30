@@ -1,11 +1,6 @@
-; 左 Ctrl の動作を Mac 風にする AutoHotkey スクリプト
-; Alt の IME ON/OFF にも対応
-; US キーボード版
-;
-; AutoHotkey: v1.1.22.07
-; Require:    alt-ime-ahk.ahk   https://github.com/karakaram/alt-ime-ahk
-; Author:     karakaram   http://www.karakaram.com/hhkb-pro2-windows-customize
+; HHKB Hybrid S US配列向け
+; 左Ctrl+左Altショートカットで Emacs風バインドする AutoHotkey スクリプト
+; Alt の IME ON/OFF に対応
 
-; https://github.com/karakaram/alt-ime-ahk
 #Include ./alt-ime-ahk.ahk
 #Include ./as-mac.ahk
