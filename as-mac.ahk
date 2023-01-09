@@ -19,66 +19,66 @@
 	return
 
 ; 左 Ctrl の動作を Mac 風に
-<^<!a::
+<!a::
 	Send,{Home}
 	return
 
-+<^<!a::
++<!a::
 	Send,+{Home}
 	return
 
-<^<!e::
+<!e::
 	Send,{End}
 	return
 
-+<^<!e::
++<!e::
 	Send,+{End}
 	return
 
-<^<!f::
+<!f::
 	Send,{Right}
 	return
 
-+<^<!f::
++<!f::
 	Send,+{Right}
 	return
 
-<^<!b::
+<!b::
 	Send,{Left}
 	return
 
-+<^<!b::
++<!b::
 	Send,+{Left}
 	return
 
-<^<!p::
+<!p::
 	Send,{Up}
 	return
 
-+<^<!p::
++<!p::
 	Send,+{Up}
 	return
 
-<^<!n::
+<!n::
 	Send,{Down}
 	return
 
-+<^<!n::
++<!n::
 	Send,+{Down}
 	return
 
-<^<!o::
+<!o::
 	Send,{End}{Enter}
 	return
 
-<^<!h::
+<!h::
 	Send,{Backspace}
 	return
 
-<^<!d::
-	Send,{Right}{Backspace}
+<!d::
+	Send,{Delete}
 	return
 
-<^<!k::
-	Send,+{End}{Backspace}
+<!k::
+	Send,+{End}{Delete}
 	return
