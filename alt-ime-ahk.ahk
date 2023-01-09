@@ -7,23 +7,19 @@
 #Include IME.ahk
 
 ; 左 Ctlr 空打ちで IME を OFF
-LCtrl::
-	KeyWait,LCtrl,T0.3
-	If (ErrorLevel == 0)
+~LControl up::
+	If (A_Priorkey == "LControl")
 	{
 		IME_SET(0)
 		return
 	}
-	KeyWait,LCtrl
 	Return
 
 ; 右 Alt 空打ちで IME を ON
-RAlt::
-	KeyWait,RAlt,T0.2
-	If (ErrorLevel == 0)
+RAlt up::
+	If (A_Priorkey == "RAlt")
 	{
 		IME_SET(1)
 		return
 	}
-	KeyWait,RAlt
 	Return
