@@ -1,10 +1,11 @@
-; 左 Ctrl の動作を Mac 風にする AutoHotkey スクリプト 
+; 左Altの動作をMac風にするAutoHotkeyスクリプト 
 ;
 ; AutoHotkey: v1.1.22.07
 ; Author:     karakaram   http://www.karakaram.com/hhkb-pro2-windows-customize
 
 #InstallKeybdHook
 #UseHook
+; Win+ShiftでVim風カーソルキー操作
 +#h::
 	Send,{Left}
 	return
@@ -18,7 +19,7 @@
 	Send,{Right}
 	return
 
-; 左 Ctrl の動作を Mac 風に
+; 左Altの動作をMac風キー操作のモディファイヤに利用する
 <!a::
 	Send,{Home}
 	return
@@ -43,12 +44,28 @@
 	Send,+{Right}
 	return
 
+<!<^f::
+	Send,^{Right}
+	return
+
++<!<^f::
+	Send,+^{Right}
+	return
+
 <!b::
 	Send,{Left}
 	return
 
 +<!b::
 	Send,+{Left}
+	return
+
+<!<^b::
+	Send,^{Left}
+	return
+
++<!<^b::
+	Send,+^{Left}
 	return
 
 <!p::
