@@ -20,6 +20,7 @@
 	return
 
 ; 左Altの動作をMac風キー操作のモディファイヤに利用する
+#IfWinNotActive,ahk_exe blender.exe
 <!a::
 	Send,{Home}
 	return
